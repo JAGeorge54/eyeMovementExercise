@@ -8,3 +8,6 @@ mousemove: Triggered when the mouse moves over an element
 mouseleave: Triggered when mouse the leaves an element
 In the starter code for this activity, the mouse movement event is used to update the position of the “eye” element displayed on the page. You can walk through the code to see how this all works.
 You task is to add a second “eye” element and have that element follow the mouse position on the screen using the mouse events.
+
+
+<img src="/images/map.jpg" style= "width: 500px; height: 500px">
