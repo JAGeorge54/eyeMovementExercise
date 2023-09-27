@@ -10,4 +10,4 @@ In the starter code for this activity, the mouse movement event is used to updat
 You task is to add a second “eye” element and have that element follow the mouse position on the screen using the mouse events.
 
 
-<img src="/images/map.jpg" style= "width: 500px; height: 500px">
+<img src="/images/oneeye.png" style= "width: 500px; height: 500px">
