@@ -14,7 +14,7 @@ body {
 .eye {
   width: 240px;
   height: 120px;
-  background: #fff;
+  background: #ffffff;
   display: inline-block;
   margin: 40px;
   border-radius: 50%;
@@ -30,4 +30,15 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
+}
+
+.monster-eye {
+  width: 240px;
+  height: 120px;
+  background: #026f2c;
+  display: inline-block;
+  margin: 40px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
 }
