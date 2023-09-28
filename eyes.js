@@ -9,3 +9,14 @@ document.onmousemove = (event) => {
     balls[i].transform = 'translate(-' + x + ',-' + y + ')';
   }
 };
+
+function changeColor() {
+  eye1 = document.getElementById('eye1')
+  eye2 = document.getElementById('eye2')
+  
+  eye1.classList.remove('eye');
+  eye1.classList.add('monster-eye')
+
+  eye2.classList.remove('eye');
+  eye2.classList.add('monster-eye')
+}
