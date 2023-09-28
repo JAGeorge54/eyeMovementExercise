@@ -11,12 +11,19 @@ document.onmousemove = (event) => {
 };
 
 function changeColor() {
+  eyeType1 = eye1.classList.contains('eye')
+  eyeType2 = eye1.classList.contains('eye')
   eye1 = document.getElementById('eye1')
   eye2 = document.getElementById('eye2')
-  
-  eye1.classList.remove('eye');
-  eye1.classList.add('monster-eye')
-
-  eye2.classList.remove('eye');
-  eye2.classList.add('monster-eye')
+  if (eyeType1 & eyeType2) {
+      eye1.classList.remove('eye');
+      eye1.classList.add('monster-eye')
+      eye2.classList.remove('eye');
+      eye2.classList.add('monster-eye')
+  } else {
+    eye1.classList.remove('monster-eye');
+      eye1.classList.add('eye')
+      eye2.classList.remove('monster-eye');
+      eye2.classList.add('eye')
+  }
 }
