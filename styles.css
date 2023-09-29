@@ -57,4 +57,11 @@ body {
 button {
   background: #026f2c;
   color: red;
-}
+  width: 200px;
+  height: 50px;
+  }
+
+  .container {
+  display: flex;
+  margin: 0 auto;
+  }
