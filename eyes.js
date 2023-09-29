@@ -1,5 +1,6 @@
-const balls = document.getElementsByClassName('ball');
-
+let balls = document.getElementsByClassName('ball');
+//sets variable for switch
+let onOff = 0
 document.onmousemove = (event) => {
   const x = (event.clientX * 100) / window.innerWidth + '%';
   const y = (event.clientY * 100) / window.innerHeight + '%';
@@ -11,19 +12,26 @@ document.onmousemove = (event) => {
 };
 
 function changeColor() {
-  eyeType1 = eye1.classList.contains('eye')
-  eyeType2 = eye1.classList.contains('eye')
-  eye1 = document.getElementById('eye1')
-  eye2 = document.getElementById('eye2')
-  if (eyeType1 & eyeType2) {
-      eye1.classList.remove('eye');
-      eye1.classList.add('monster-eye')
-      eye2.classList.remove('eye');
-      eye2.classList.add('monster-eye')
+// gets ahold of eyes and balls
+  let eyes = document.querySelectorAll('.eye')
+  let balls = document.querySelectorAll('.ball')
+      
+  if (onOff === 0) {
+    // changes color to monster colors
+    eyes[0].style.backgroundColor = '#026f2c';
+    eyes[1].style.backgroundColor = '#026f2c';
+    balls[0].style.backgroundColor = 'red';
+    balls[1].style.backgroundColor = 'red';
+    //updates variable for switch
+    onOff = 1   
   } else {
-    eye1.classList.remove('monster-eye');
-      eye1.classList.add('eye')
-      eye2.classList.remove('monster-eye');
-      eye2.classList.add('eye')
+    //changes colors back to regular colors
+    eyes[0].style.backgroundColor = '#ffffff';
+    eyes[1].style.backgroundColor = '#ffffff';
+    balls[0].style.backgroundColor = '#000';
+    balls[1].style.backgroundColor = '#000';
+    //updates variable for switch
+    onOff = 0   
   }
+
 }
